@@ -1,0 +1,16 @@
+/* #1 Syntax */
+body {
+  background: #fff;
+  color: #ccc; }
+  body p {
+    color: #e6e6e6; }
+
+.container {
+  margin: 3em;
+  padding: 0.75em; }
+
+.sidebar ol li,
+footer {
+  padding: 1.5em; }
+
+/*# sourceMappingURL=master-css.css.map */

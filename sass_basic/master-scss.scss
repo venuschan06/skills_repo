@@ -1,0 +1,22 @@
+/* #1 Syntax */
+
+$bg-color: #fff;
+$text-color: #ccc;
+$baseline: 1.5em;
+
+body { 
+	background: $bg-color;
+	color: $text-color;
+	p {
+		color: lighten($text-color, 10%);
+	}
+}
+
+.container {
+	margin: $baseline * 2; padding: $baseline / 2;
+}
+
+.sidebar ol li,
+footer {
+	padding: $baseline;
+}
