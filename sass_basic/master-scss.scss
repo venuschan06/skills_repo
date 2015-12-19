@@ -9,14 +9,58 @@ body {
 	color: $text-color;
 	p {
 		color: lighten($text-color, 10%);
+		a {
+			color: #589ED3;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/* Layout specific */
+.container {
+	margin: $baseline * 2; padding: $baseline / 2;
+	.box-layout & {
+		background-color: #fff;
+		padding: 3em;
+		border: 1px solid #eaeaea;
+		border-width: 0 1px;
+	}
+	.ie8 & {
+		padding: 2em;
+	}
+	> header {
+		h1 {
+			font-size: 4em;
+			font-weight: bold;
+		}
 	}
 }
 
-.container {
-	margin: $baseline * 2; padding: $baseline / 2;
+ul {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	li{
+		float: left;
+		&:after {
+			content: "";
+			border: 1px dotted #ccc;
+			width: 1px;
+			height: 100%;
+		}
+	}
 }
 
 .sidebar ol li,
 footer {
 	padding: $baseline;
+}
+
+/*The parent selector can be used in a few different ways*/
+#demo {
+	&-child {margin: .5em;}
+	&child { margin: .5em;}
+	&.child {margin: .5em;}
+	& .child {margin: .5em;}
 }

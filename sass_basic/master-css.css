@@ -4,13 +4,50 @@ body {
   color: #ccc; }
   body p {
     color: #e6e6e6; }
+    body p a {
+      color: #589ED3; }
+      body p a:hover {
+        text-decoration: underline; }
 
+/* Layout specific */
 .container {
   margin: 3em;
   padding: 0.75em; }
+  .box-layout .container {
+    background-color: #fff;
+    padding: 3em;
+    border: 1px solid #eaeaea;
+    border-width: 0 1px; }
+  .ie8 .container {
+    padding: 2em; }
+  .container > header h1 {
+    font-size: 4em;
+    font-weight: bold; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden; }
+  ul li {
+    float: left; }
+    ul li:after {
+      content: "";
+      border: 1px dotted #ccc;
+      width: 1px;
+      height: 100%; }
 
 .sidebar ol li,
 footer {
   padding: 1.5em; }
+
+/*The parent selector can be used in a few different ways*/
+#demo-child {
+  margin: .5em; }
+#demochild {
+  margin: .5em; }
+#demo.child {
+  margin: .5em; }
+#demo .child {
+  margin: .5em; }
 
 /*# sourceMappingURL=master-css.css.map */
